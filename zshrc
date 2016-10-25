@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dpoggi"
+ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -114,6 +114,12 @@ alias hosts='sudo vim /etc/hosts'
 alias b='cd ~/xzh/blog/'
 alias sou='source ~/.zshrc'
 alias bastion='ssh -i ~/Downloads/xiazihang.pem xiazihang@172.16.12.206'
+alias cddata='cd ~/work/cd-ruby-data_service/'
+alias bs='rails s -p 9000 -e development -b 127.0.0.1'
+alias page='cd ~/xzh/xiazihang'
+alias tw='cd ~/xzh/tw_assignment_xiazihang/'
 
-export PATH="$PATH:$HOME/.rvm/bin:/usr/local/Cellar/mysql55/5.5.49/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin:/usr/local/Cellar/mysql55/5.5.49/bin:$JAVA_HOME/bin" # Add RVM to PATH for scripting
 export NVM_DIR="$HOME/.nvm" && . "$(brew --prefix nvm)/nvm.sh"
+export RVM='rvm get stable --auto-dotfiles'
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
