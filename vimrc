@@ -73,6 +73,7 @@ set nobackup
 set noswapfile
 
 let g:gitgutter_enabled = 1
+let g:gitgutter_highlight_lines = 0
 "let g:gitgutter_sign_added = 'xx'
 "let g:gitgutter_sign_modified = 'yy'
 "let g:gitgutter_sign_removed = 'zz'
@@ -183,7 +184,7 @@ set foldenable
 " syntax    使用语法定义折叠
 " diff      对没有更改的文本进行折叠
 " marker    使用标记进行折叠, 默认标记是 {{{ 和 }}}
-set foldmethod=indent
+set foldmethod=syntax
 set foldlevel=99
 " 代码折叠自定义快捷键 <leader>zz
 let g:FoldMethod = 0
@@ -669,9 +670,11 @@ endif
 set background=dark
 set t_Co=256
 
-colorscheme solarized
+" colorscheme solarized
 " colorscheme molokai
 " colorscheme desert
+" colorscheme evening
+color dracula
 
 
 " 设置标记一列的背景颜色和数字一行颜色一致
@@ -688,7 +691,7 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
-
+highlight Search term=reverse ctermbg=13 gui=undercurl guisp=Magenta
 
 
 
