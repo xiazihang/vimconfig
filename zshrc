@@ -5,7 +5,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dracula"
+# ZSH_THEME="dracula"
+ZSH_THEME="agnoster"
+ # ZSH_THEME="amuse"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -118,6 +120,8 @@ alias cddata='cd ~/work/cd-ruby-data_service/'
 alias bs='rails s -p 9000 -e development -b 127.0.0.1'
 alias page='cd ~/xzh/xiazihang'
 alias tw='cd ~/xzh/tw_assignment_xiazihang/'
+alias ruler='cd ~/xzh/Ruler'
+alias bq='cd ~/xzh/best_quotes'
 
 export PATH="$PATH:$HOME/.rvm/bin:/usr/local/Cellar/mysql55/5.5.49/bin:$JAVA_HOME/bin" # Add RVM to PATH for scripting
 export NVM_DIR="$HOME/.nvm" && . "$(brew --prefix nvm)/nvm.sh"
